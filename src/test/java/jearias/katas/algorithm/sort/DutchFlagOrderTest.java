@@ -1,4 +1,4 @@
-package jearias.katas.chain;
+package jearias.katas.algorithm.sort;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
