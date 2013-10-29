@@ -13,10 +13,12 @@ public class DutchFlagOrderTest {
 
     @Test
     public void testDutchFlagSort() {
-        int[] chain = { 2, 25, 3, 6, 8, 9, 1, 12, 43, 2, 4, 0 };
+        int[] chain = { 3, 6, 12, 9, 23, 7, 15, 2, 4, 0 };
+        int[] orderedChain = { 3, 0, 2, 9, 4, 7, 6, 15, 23, 12 };
         System.out.println("start: " + Arrays.toString(chain));
         DutchFlagOrder.dutchFlagSort(chain, 4, 10);
         System.out.println("end: " + Arrays.toString(chain));
+        assertThat(chain, equalTo(orderedChain));
 
     }
 
